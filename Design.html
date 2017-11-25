@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Designcss.css">
+    <script src="myjava.js" type="text/javascript"></script>
+    <script src="jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+  $(".sitemap a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});</script>
+<body>
+   <div class="head">
+<div class="sitemap">
+<ul>
+    <li><a href="#content">Content</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Download</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+</div>
+    <div class="title-web">
+    <h1>Reload</h1>
+    <p>Write down the description about your website here</p>
+    <a href="#"><div class="button-dl">Download This Template</div></a>
+    </div>
+    </div>
+    <div class="content-title">Content</div>
+    <div class="content-wrapper" id="content">
+    <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+    <div class="content">
+        <div class="content-1 cntn fade" ><img src="images/content-1.jpg"><p>Designing a good website that accommodates a lot of content is a tricky balancing act to pull off. Does one attempt to present the user with all the information in a clean, organized manner, or reveal it bit-by-bit, in an effort to create an engaging breadcrumb trail that tugs the user along the road to enlightenment? Get it wrong, and you risk overwhelming your visitors, who’ll then leave without retaining any part of what they just read. Get it right, though, and you’ll have gained a new audience member who not only understands your message, but also might just bring a few friends with them when they return.Designing a good website that accommodates a lot of content is a tricky balancing act to pull off. Does one attempt to present the user with all the information in a clean, organized manner, or reveal it bit-by-bit, in an effort to create an engaging breadcrumb trail that tugs the user along the road to enlightenment? Get it wrong, and you risk overwhelming your visitors, who’ll then leave without retaining any part of what they just read. Get it right, though, and you’ll have gained a new audience member who not only understands your message, but also might just bring a few friends with them when they return.Designing a good website that accommodates a lot of content is a tricky balancing act to pull off. Does one attempt to present the user with all the information in a clean, organized manner, or reveal it bit-by-bit, in an effort to create an engaging breadcrumb trail that tugs the user along the road to enlightenment? Get it wrong, and you risk overwhelming your visitors, who’ll then leave without retaining any part of what they just read.</p></div>
+    <div class="content-2 cntn fade"><p>Being the parent company of many of the best-known magazines around (including a couple we’ve featured here), almost makes Conde Nast’s site genetically predisposed to offer a mountain of content that could easily be overwhelming if not approached with caution, forethought and disciplined design.Being the parent company of many of the best-known magazines around (including a couple we’ve featured here), almost makes Conde Nast’s site genetically predisposed to offer a mountain of content that could easily be overwhelming if not approached with caution, forethought and disciplined design.</p></div>
+    <div class="content-3 cntn fade"></div>
+    </div>
+    </div>
+    <div class="about-wrapper">
+    <div class="about"></div>
+    </div>
+    <div class="contact-wrapper">
+    <div class="contact"></div>
+    </div>
+       <footer>
+        <div class="foot-site">
+        <ul>
+    <li><a href="#">Content</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Download</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+            <p>Created by Syahid Nurrohim | All Rights Reserved</p>
+            </div>
+        
+    </footer>
+</body>
+</html>
